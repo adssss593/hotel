@@ -18,12 +18,12 @@ OR replace TABLE roomType (
 CREATE
 OR replace TABLE guests (
   id int NOT NULL PRIMARY KEY AUTO_INCREMENT,
-  guestName varchar(50),
+  guestName varchar(50) not NULL,
   guestAddress varchar(100),
   city varchar(30),
   county varchar(30),
   postcode varchar(8),
-  phone varchar(15)
+  phone varchar(15) not null
 );
 CREATE
 or replace table rooms (
