@@ -52,6 +52,12 @@ VALUES
     "7 Popular Drive",
     "CM3 4VJ",
     "0719897426495"
+  ),
+  (
+    "Jeremiah Pendergrass",
+    "70 Oakwood Street",
+    "LS7 2AU",
+    "07198751235"
   );
 INSERT into
   roomType
@@ -67,7 +73,8 @@ values
     TRUE,
     false,
     1,
-    0
+    0,
+    149.99
   ),
   #no jacuzzi
   (
@@ -81,24 +88,11 @@ values
     false,
     true,
     1,
-    0
+    0,
+    174.99
   ),
   #jacuzzi
   (
-    3,
-    "double",
-    4,
-    true,
-    false,
-    false,
-    false,
-    true,
-    false,
-    0,
-    2
-  ),
-  #microwave no jaccuzi
-  (
     4,
     "double",
     4,
@@ -109,7 +103,8 @@ values
     true,
     false,
     0,
-    2
+    2,
+    174.99
   ),
   #fridge, no jaccuzi
   (
@@ -123,24 +118,24 @@ values
     false,
     true,
     0,
-    2
+    2,
+    199.99
   ),
   #microwave, jaccuzi
   (
-    6,
-    "double",
-    4,
-    false,
+    7,
+    "suite",
+    8,
+    true,
+    true,
+    true,
+    true,
     true,
     false,
-    false,
-    false,
-    true,
-    0,
-    2
-  ),
-  #fridge, jacuzzi
-  (7, "suite", 8, true, true, true, true, true, false, 1, 2);
+    1,
+    2,
+    399.99
+  );
 insert into
   rooms
 VALUES
@@ -178,6 +173,7 @@ VALUES
   (201, 4, 2, 2, "2023-3-6", "2023-2-7"),
   (302, 5, 3, 0, "2023-3-18", "2023-3-23"),
   (202, 6, 2, 2, "2023-3-29", "2023-3-31"),
+  (304, 7, 2, 0, "2023-03-31", "2023-4-5"),
   (304, 5, 3, 0, "2023-6-17", "2023-6-18"),
   (303, 2, 2, 1, "2023-7-28", "2023-7-29"),
   (305, 2, 1, 0, "2023-8-30", "2023-09-01"),
@@ -186,3 +182,11 @@ VALUES
   (401, 3, 2, 2, "2023-9-22", "2023-9-25"),
   (206, 1, 2, 0, "2023-09-22", "2023,9,25"),
   (301, 1, 2, 2, "2023-9-22", "2023-9-25");
+DELETE from
+  reservations
+where
+  guestID = 7;
+DELETE from
+  guests
+where
+  id = 7;
