@@ -9,3 +9,6 @@ considering a ficticous hotel, I have written 3 sql scripts.
 
 3)The third writes a selection of queries that represent all the key concepts of writing queries including
 multi-table joins, complex boolean where statements and aggregate functions.
+
+
+![plot]("C:\Users\adamj\OneDrive\Documents\Mthree\hotel\hotel database.png")
