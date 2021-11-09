@@ -10,6 +10,4 @@ considering a ficticous hotel, I have written 3 sql scripts.
 3)The third writes a selection of queries that represent all the key concepts of writing queries including
 multi-table joins, complex boolean where statements and aggregate functions.
 
-
-![plot]("C:\Users\adamj\OneDrive\Documents\Mthree\hotel\hotel database.png")
 ![hotel database](https://user-images.githubusercontent.com/53218887/140986007-36535cb9-cf52-448d-9348-625b1bd0de4a.png)
