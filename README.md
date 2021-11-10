@@ -12,3 +12,4 @@ multi-table joins, complex boolean where statements and aggregate functions.
 
 Database Schema
 
+![hotel database](https://user-images.githubusercontent.com/53218887/141133758-19994f32-4608-436c-956e-95326da39469.png)
