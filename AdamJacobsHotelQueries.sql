@@ -1,3 +1,4 @@
+USE AdamJacobsHotelDB;
 #all reservations that end in july 2023
 SELECT
   guestName,
@@ -76,3 +77,12 @@ GROUP BY
 ORDER BY
   COUNT(guestName) DESC,
   guestName;
+#shows guest name, address and phone number for a particular phone number
+SELECT
+  guestName,
+  guestAddress,
+  phone
+FROM
+  guests
+WHERE
+  phone = 07395720432;

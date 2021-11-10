@@ -23,8 +23,8 @@ OR replace TABLE guests (
   guestName varchar(50) not NULL,
   guestAddress varchar(100),
   city varchar(30),
-  county varchar(30),
-  postcode varchar(8),
+  state varchar(30),
+  zip char(8),
   phone varchar(15) not null
 );
 CREATE
@@ -45,12 +45,3 @@ or replace TABLE reservations (
   foreign key (roomNumber) references rooms(roomNumber),
   foreign key (guestID) references guests(id)
 );
-#shows guest name, address and phone number for a particular phone number
-SELECT
-  guestName,
-  guestAddress,
-  phone
-FROM
-  guests
-WHERE
-  phone = 07395720432;
